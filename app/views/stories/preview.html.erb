@@ -361,12 +361,7 @@ strong {
       </table>
 
       <h1><a target="_blank" style="color:#000000!important;text-decoration:none;border:none!important;"><font color="#000000"><%= @story.title %></font></a></h1>
-
-
         <%= @story.body %>
-
-
-
       <p class="p_btn-social">
         <a href="https://www.facebook.com" target="_blank"><img src="https://img.createsend1.com/ei/j/30/B40/C56/csimport/facebook_icon.png" style="display: inline;max-width:20px" width="20" alt=""></a>&nbsp;&nbsp;
         <a href="https://www.twitter.com" target="_blank"><img src="https://img.createsend1.com/ei/j/30/B40/C56/csimport/twitter_icon.png" style="display: inline;max-width:20px" width="20" alt=""></a>&nbsp;&nbsp;
@@ -378,4 +373,9 @@ strong {
   </tr>
 </table>
 
+
+
+
+<%= link_to 'Back', stories_path %>
+<%= link_to 'Edit', edit_story_path(@story) %> 
 
