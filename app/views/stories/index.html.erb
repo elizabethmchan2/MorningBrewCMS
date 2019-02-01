@@ -1,6 +1,26 @@
+<style>
+.mb-logo {
+  width: 5%;
+  height: 5%;
+  order: 0;
+}
+
+.stories-heading { 
+  padding-top: 2px;
+  color:black !important;
+  order: 1;
+}
+
+</style>
+
+
 <p id="notice"><%= notice %></p>
 
-<h1>Stories</h1>
+<div style = "display: flex; flex-direction: row;">
+  <%= image_tag("/cup.jpg", :alt => "rss feed", :class => "mb-logo") %>
+  <h1 class = "stories-heading">Stories</h1>
+</div>
+
 
 <table>
   <thead>
@@ -12,7 +32,7 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody class = "story-cards">
     <% @stories.each do |story| %>
       <tr>
         <td><%= story.title %></td>

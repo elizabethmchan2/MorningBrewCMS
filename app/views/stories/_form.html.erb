@@ -13,12 +13,12 @@
 
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, :class => "form-box" %>
   </div>
 
   <div class="field">
     <%= form.label :tag %>
-    <%= form.text_field :tag %>
+    <%= form.text_field :tag, :class => "form-box"  %>
   </div>
 
   <div class="field" id = "tinymce_editor">
@@ -27,7 +27,7 @@
     <%= tinymce %>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Update", :class => "form-submit-button"%>
   </div>
 <% end %>
 
