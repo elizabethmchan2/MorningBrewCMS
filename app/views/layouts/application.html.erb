@@ -13,10 +13,19 @@
     
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=9nojs7ji7acovodjodyvyhcbc30mg6pywtz9euxyc6l0q9if"></script>
 
+    <%# <script type="text/javascript" src="/assets/javascripts/tinymce.js"> %>
+
     <script>
     tinymce.init({
-      selector: "textarea.tinymce"
-    });
+            selector: "textarea.tinymce",
+            toolbar: "undo redo | styleselect | bold italic strikethrough underline forecolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | preview code" ,
+            plugins: "lists,textcolor, preview,image,link,code,codesample,autoresize,imagetools,media,table,insertdatetime,charmap,print,preview,anchor,searchreplace,visualblocks,fullscreen, wordcount, powerpaste", 
+            powerpaste_allow_local_images: true,
+            powerpaste_word_import: 'prompt',
+            powerpaste_html_import: 'prompt',
+            menubar: "",
+            content_css: 'assets/stylesheets/preview.css',
+        });
     </script> 
 
   </head>
