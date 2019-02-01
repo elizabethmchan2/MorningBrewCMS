@@ -1,5 +1,5 @@
 class StoriesController < ApplicationController
-  before_action :set_story, only: [:show, :edit, :update, :destroy]
+  before_action :set_story, only: [:show, :edit, :preview, :update, :destroy]
 
   # GET /stories
   # GET /stories.json
@@ -19,6 +19,10 @@ class StoriesController < ApplicationController
 
   # GET /stories/1/edit
   def edit
+  end
+
+  # GET /stories/1/preview
+  def preview
   end
 
   # POST /stories

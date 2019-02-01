@@ -21,11 +21,10 @@
     <%= form.text_field :tag %>
   </div>
 
-  <div class="field">
+  <div class="field" id = "tinymce_editor">
     <%= form.label :body %>
     <%= form.text_area :body, :class => "tinymce", :rows => 20, :cols => 50 %>
     <%= tinymce %>
-  </div>
 
   <div class="actions">
     <%= form.submit %>
