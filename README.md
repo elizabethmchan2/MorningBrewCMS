@@ -1,9 +1,9 @@
 # README
 
-#Custom CMS for Morning Brew
-##Elizabeth Chan
+# Custom CMS for Morning Brew
+## Elizabeth Chan
 
-###Ideas for additional features:
+### Ideas for additional features:
 o Style the pages to build a better UI
 o Nest the stories model within a newsletter model so you can build "newsletters" (grouped by
 date), each with multiple stories
@@ -15,5 +15,5 @@ I would continue the same color scheme as the Morning Brew website with a naviga
 Looking at other additional features, I would include some sort of social media integration so that it was easy to pull text from stories to be curated and created into social media posts. In the future when more graphics are added to the newsletters, the CMS would also be able to showcase a list of all graphics that can be added to the newsletter.
 
 
-###Notes:
+### Notes:
 story content does not display properly on Preview page
