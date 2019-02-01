@@ -14,7 +14,7 @@ class StoriesTest < ApplicationSystemTestCase
     visit stories_url
     click_on "New Story"
 
-    fill_in "Content", with: @story.content
+    fill_in "Body", with: @story.body
     fill_in "Tag", with: @story.tag
     fill_in "Title", with: @story.title
     click_on "Create Story"
@@ -27,7 +27,7 @@ class StoriesTest < ApplicationSystemTestCase
     visit stories_url
     click_on "Edit", match: :first
 
-    fill_in "Content", with: @story.content
+    fill_in "Body", with: @story.body
     fill_in "Tag", with: @story.tag
     fill_in "Title", with: @story.title
     click_on "Update Story"
